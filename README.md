@@ -1,9 +1,9 @@
 ### What is this?
 
 This is an attempt (based on [a project](https://github.com/lukeolson/illinois-letterhead) by
-[Luke Olson](https://github.com/lukeolson)) to reproduce the current Illinois letterhead in latex.
+[Luke Olson](https://github.com/lukeolson)) to reproduce the current Illinois letterhead in LaTeX.
 
-This uses the new brand, [the block I](http://creativeservices.illinois.edu/brand/).
+This is the “space-saving” format with "The Grainger College of Engineering" branding and [the block I](http://creativeservices.illinois.edu/brand/).
 
 
 ### How do I use it?
