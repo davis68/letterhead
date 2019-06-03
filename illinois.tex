@@ -9,7 +9,7 @@
 \definecolor{UIorange}{RGB}{232,74,39}
 
 % set page geometry
-\usepackage[top=0.75in,left=1.0in,bottom=0.33in,right=1.0in]{geometry}
+\usepackage[top=1.75in,left=1.0in,bottom=0.33in,right=1.0in]{geometry}
 \usepackage{graphicx}
 
 % logo
@@ -27,7 +27,7 @@
 \usepackage{ifthen}
 
 % load Montserrat font -- this is a close alternative to Gotham
-\usepackage[defaultfam,light,tabular,lining]{montserrat} %% Option 'defaultfam'
+\usepackage[defaultfam,light,semibold,oldstyle]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
 
@@ -48,26 +48,28 @@
 % add stuff to the doc
 \AtBeginDocument{%
     % Top block with logo
-    \begin{textblock*}{\textwidth}(0.75in,0.75in)
+    \begin{textblock*}{\textwidth}(1.0in,0.75in)
       \includegraphics[height=0.3125in]{\logofile}
     \end{textblock*}
 
     % Inset department address
-    \begin{textblock*}{4.0in} (0.75in,1.65625in)
+    \begin{textblock*}{4.0in} (3.0in,0.45in)
+      \begin{flushright}
         {%
-         % use medium bold here
+	\color{UIblue}
+	\fontsize{11}{14}
+	%\fontseries{b}
+	\textbf
+	\fromcollege\\%
+	}
+	\vspace{2mm}
+	{%
         \color{UIblue}
-        \fontsize{10}{12}\selectfont
-        \fontseries{mb}\selectfont
+	\small
         \fromdept\\%
-        }
-        \vspace{2mm}
-        {%
-        \color{UIblue}
-        \footnotesize\par
-        %\fontsize{9}{10}\selectfont
         \fromdeptaddress%
         }
+      \end{flushright}
     \end{textblock*}
 
     % main text
@@ -85,21 +87,20 @@
     % specify the top right corner location of the footer
     \begin{textblock*}{\textwidth}[1.0,0.0](7.75in,9.9375in)
         {%
-         \begin{flushright}
+         \begin{flushleft}
          \color{UIorange}
          \fontseries{mb}\selectfont
+         \small
          UNIVERSITY OF ILLINOIS AT URBANA--CHAMPAIGN
-         \end{flushright}
+         \end{flushleft}
         }
-        \vspace{-5mm}
+        \vspace{-6mm}
         {%
-         \begin{flushright}
+         \begin{flushleft}
          \color{UIblue}
          \fontsize{9}{11}\selectfont
-         \fromtel\ \textbullet\
-         \fromemail\ \textbullet\
-         \fromweb%
-         \end{flushright}
+         \fromtel\ \textbullet\ \fromweb%
+         \end{flushleft}
         }
     \end{textblock*}
     }
@@ -110,9 +111,5 @@
 % add closing to end of the document, if sig is available
 \AtEndDocument{%
     \par\vspace{2ex}
-    \closing,
-
-    \ifthenelse{\equal{\signaturefile}{}}{\bigskip\bigskip}{\includegraphics[width=1.2in]{\signaturefile}\\[-0.2\baselineskip]}
-
     \fromname%
 }
