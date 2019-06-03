@@ -12,7 +12,7 @@ The official letterhead appears to use the [Gotham](https://www.typography.com/f
 A sufficiently similar freely available alternative is the [Montserrat](https://ctan.org/tex-archive/fonts/montserrat?lang=en) font,
 which is used here and is included in TexLive.
 
-Use `template.tex`, it includes the logo and font style through `illinois.tex`.
+To compose a letter, use `template.tex`, which includes the logo and font style through `illinois.tex`, as a guide.
 
 
 ### What does it look like?
