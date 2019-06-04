@@ -1,7 +1,7 @@
 ### What is this?
 
-This is an attempt (based on [a project](https://github.com/lukeolson/illinois-letterhead) by
-[Luke Olson](https://github.com/lukeolson)) to reproduce the current Illinois letterhead in LaTeX.
+This is a LaTeX reproduction of the current Illinois letterhead (based on [a project](https://github.com/lukeolson/illinois-letterhead) by
+[Luke Olson](https://github.com/lukeolson)).
 
 This is the “space-saving” format with "The Grainger College of Engineering" branding and [the block I](http://creativeservices.illinois.edu/brand/), designed by Colin Robertson for the Department of Computer Science.
 
