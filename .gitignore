@@ -1,5 +1,6 @@
 *.pdf
 sig.png
+recommendation.tex
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
